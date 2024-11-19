@@ -1,0 +1,8 @@
+.nextflow*
+work/
+results/
+*.log
+*.err
+.DS_Store
+testing/
+testing*
