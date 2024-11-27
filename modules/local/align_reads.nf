@@ -101,7 +101,7 @@ process ALIGN_READS {
 
         cat <<-END_VERSIONS > versions.yml
         "${task.process}":
-            bwa: \$(bwa 2>&1 | grep ^Version | sed 's/^.*Version: //; s/$//')
+            bwa: \$(bwa 2>&1 | grep ^Version | sed 's/^.*Version: //; s/\$//')
             samtools: \$(samtools --version | grep ^samtools | sed 's/^.*samtools //; s/ .*\$//')
         END_VERSIONS
         """
